@@ -1,0 +1,11 @@
+
+version: "2.1"
+
+services:
+  fluencelabs:
+    ports:
+      - 30000:30000
+    container_name: fluencelabs
+    image: fluencelabs/frun
+    volumes:
+      - ./backend/target/wasm32-unknown-unknown/release/tic_tac_toe.wasm:/code/tic_tac_toe.wasm

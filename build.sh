@@ -1,0 +1,1 @@
+cargo +nightly build --lib --target wasm32-unknown-unknown

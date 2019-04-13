@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fluence hello world</title>
+        <script src="bundle.js"></script>
+    </head>
+    <body> 
+        <style>
+            .usr-info-upd {
+                margin-top: 10px;
+            }
+
+            .user-info {
+                display: flex;
+                justify-content: space-around
+            }
+
+            li {
+                list-style: none
+            }
+
+            .step-2 {
+                display: none;
+                flex-direction: column;
+            }
+
+            .found-rooms {
+                display: none;
+            }
+
+            .find {
+                margin-bottom: 10px;
+            }
+
+            .bt {
+                width: 100px;
+                height: 20px;
+            }
+        </style>
+
+        <section class="container">
+            <h1>User information</h1>
+            <div class="user-info">
+                <div class="input">
+                    <div class="inf">
+                        <label class="inf-label">
+                            <span class="inf-name">User name</span>
+                            <input type="text" class="inf-name-inp">
+                        </label>
+                    </div>
+    
+                    <button class="usr-info-upd">regestration</button>
+                </div>
+                <div class="view">
+                    <div class="user">
+                        <h1>You info</h1>
+                        <div class="us-n"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-2">
+                <button class='bt find'>Find rooms</button>
+                <label>
+                    <span>room-name</span>
+                    <input type="text" class="inp-room-name">
+                </label>
+                <button class='bt create'>create room</button>
+            </div>
+
+
+            <div class="rooms">
+                <div class="found-rooms">
+                    <h3>Found rooms</h3>
+                    <ul class="found-room-l"></ul>
+                </div>
+
+                <div class="room">
+                    <h2>Room info</h2>
+                    <span>Room name:</span> <span class="room-name">...</span>
+                    <div class="tables">
+                        <h3>Users</h3>
+                        <ul class="usr-list">
+                            <!-- <li class="usr-item">kellas</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
